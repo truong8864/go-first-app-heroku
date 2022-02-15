@@ -7,5 +7,6 @@ import (
 
 func main() {
 	ginS.GET("/", func(c *gin.Context) { c.String(200, "Hello World") })
+	ginS.GET("/name", func(c *gin.Context) { c.String(200, "name") })
 	ginS.Run()
 }
